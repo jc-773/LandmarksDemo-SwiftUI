@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E005C15024A77EA800430FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005C14F24A77EA800430FF7 /* AppDelegate.swift */; };
+		E005C15224A77EA800430FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005C15124A77EA800430FF7 /* SceneDelegate.swift */; };
+		E005C15524A77EA800430FF7 /* NationalParks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E005C15324A77EA800430FF7 /* NationalParks.xcdatamodeld */; };
+		E005C15724A77EA800430FF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005C15624A77EA800430FF7 /* ContentView.swift */; };
+		E005C15924A77EAD00430FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E005C15824A77EAD00430FF7 /* Assets.xcassets */; };
+		E005C15C24A77EAD00430FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E005C15B24A77EAD00430FF7 /* Preview Assets.xcassets */; };
+		E005C15F24A77EAD00430FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E005C15D24A77EAD00430FF7 /* LaunchScreen.storyboard */; };
+		E005C16A24A77EAD00430FF7 /* NationalParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005C16924A77EAD00430FF7 /* NationalParksTests.swift */; };
+		E005C17524A77EAD00430FF7 /* NationalParksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005C17424A77EAD00430FF7 /* NationalParksUITests.swift */; };
+		E0CBA9A02651C19A0040E87F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBA99F2651C19A0040E87F /* CircleImage.swift */; };
+		E0CBA9A22651C2FC0040E87F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBA9A12651C2FC0040E87F /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E005C16624A77EAD00430FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E005C14424A77EA800430FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E005C14B24A77EA800430FF7;
+			remoteInfo = NationalParks;
+		};
+		E005C17124A77EAD00430FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E005C14424A77EA800430FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E005C14B24A77EA800430FF7;
+			remoteInfo = NationalParks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E005C14C24A77EA800430FF7 /* NationalParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E005C14F24A77EA800430FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E005C15124A77EA800430FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E005C15424A77EA800430FF7 /* NationalParks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NationalParks.xcdatamodel; sourceTree = "<group>"; };
+		E005C15624A77EA800430FF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E005C15824A77EAD00430FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E005C15B24A77EAD00430FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E005C15E24A77EAD00430FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E005C16024A77EAD00430FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E005C16524A77EAD00430FF7 /* NationalParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E005C16924A77EAD00430FF7 /* NationalParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksTests.swift; sourceTree = "<group>"; };
+		E005C16B24A77EAD00430FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E005C17024A77EAD00430FF7 /* NationalParksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E005C17424A77EAD00430FF7 /* NationalParksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksUITests.swift; sourceTree = "<group>"; };
+		E005C17624A77EAD00430FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CBA99F2651C19A0040E87F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E0CBA9A12651C2FC0040E87F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E005C14924A77EA800430FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16224A77EAD00430FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16D24A77EAD00430FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E005C14324A77EA800430FF7 = {
+			isa = PBXGroup;
+			children = (
+				E005C14E24A77EA800430FF7 /* NationalParks */,
+				E005C16824A77EAD00430FF7 /* NationalParksTests */,
+				E005C17324A77EAD00430FF7 /* NationalParksUITests */,
+				E005C14D24A77EA800430FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E005C14D24A77EA800430FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E005C14C24A77EA800430FF7 /* NationalParks.app */,
+				E005C16524A77EAD00430FF7 /* NationalParksTests.xctest */,
+				E005C17024A77EAD00430FF7 /* NationalParksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E005C14E24A77EA800430FF7 /* NationalParks */ = {
+			isa = PBXGroup;
+			children = (
+				E005C14F24A77EA800430FF7 /* AppDelegate.swift */,
+				E005C15124A77EA800430FF7 /* SceneDelegate.swift */,
+				E005C15624A77EA800430FF7 /* ContentView.swift */,
+				E005C15824A77EAD00430FF7 /* Assets.xcassets */,
+				E0CBA99F2651C19A0040E87F /* CircleImage.swift */,
+				E005C15D24A77EAD00430FF7 /* LaunchScreen.storyboard */,
+				E005C16024A77EAD00430FF7 /* Info.plist */,
+				E005C15324A77EA800430FF7 /* NationalParks.xcdatamodeld */,
+				E005C15A24A77EAD00430FF7 /* Preview Content */,
+				E0CBA9A12651C2FC0040E87F /* MapView.swift */,
+			);
+			path = NationalParks;
+			sourceTree = "<group>";
+		};
+		E005C15A24A77EAD00430FF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E005C15B24A77EAD00430FF7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E005C16824A77EAD00430FF7 /* NationalParksTests */ = {
+			isa = PBXGroup;
+			children = (
+				E005C16924A77EAD00430FF7 /* NationalParksTests.swift */,
+				E005C16B24A77EAD00430FF7 /* Info.plist */,
+			);
+			path = NationalParksTests;
+			sourceTree = "<group>";
+		};
+		E005C17324A77EAD00430FF7 /* NationalParksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E005C17424A77EAD00430FF7 /* NationalParksUITests.swift */,
+				E005C17624A77EAD00430FF7 /* Info.plist */,
+			);
+			path = NationalParksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E005C14B24A77EA800430FF7 /* NationalParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E005C17924A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParks" */;
+			buildPhases = (
+				E005C14824A77EA800430FF7 /* Sources */,
+				E005C14924A77EA800430FF7 /* Frameworks */,
+				E005C14A24A77EA800430FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NationalParks;
+			productName = NationalParks;
+			productReference = E005C14C24A77EA800430FF7 /* NationalParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E005C16424A77EAD00430FF7 /* NationalParksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E005C17C24A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParksTests" */;
+			buildPhases = (
+				E005C16124A77EAD00430FF7 /* Sources */,
+				E005C16224A77EAD00430FF7 /* Frameworks */,
+				E005C16324A77EAD00430FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E005C16724A77EAD00430FF7 /* PBXTargetDependency */,
+			);
+			name = NationalParksTests;
+			productName = NationalParksTests;
+			productReference = E005C16524A77EAD00430FF7 /* NationalParksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E005C16F24A77EAD00430FF7 /* NationalParksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E005C17F24A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParksUITests" */;
+			buildPhases = (
+				E005C16C24A77EAD00430FF7 /* Sources */,
+				E005C16D24A77EAD00430FF7 /* Frameworks */,
+				E005C16E24A77EAD00430FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E005C17224A77EAD00430FF7 /* PBXTargetDependency */,
+			);
+			name = NationalParksUITests;
+			productName = NationalParksUITests;
+			productReference = E005C17024A77EAD00430FF7 /* NationalParksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E005C14424A77EA800430FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Jonathan Clark";
+				TargetAttributes = {
+					E005C14B24A77EA800430FF7 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E005C16424A77EAD00430FF7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E005C14B24A77EA800430FF7;
+					};
+					E005C16F24A77EAD00430FF7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E005C14B24A77EA800430FF7;
+					};
+				};
+			};
+			buildConfigurationList = E005C14724A77EA800430FF7 /* Build configuration list for PBXProject "NationalParks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E005C14324A77EA800430FF7;
+			productRefGroup = E005C14D24A77EA800430FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E005C14B24A77EA800430FF7 /* NationalParks */,
+				E005C16424A77EAD00430FF7 /* NationalParksTests */,
+				E005C16F24A77EAD00430FF7 /* NationalParksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E005C14A24A77EA800430FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E005C15F24A77EAD00430FF7 /* LaunchScreen.storyboard in Resources */,
+				E005C15C24A77EAD00430FF7 /* Preview Assets.xcassets in Resources */,
+				E005C15924A77EAD00430FF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16324A77EAD00430FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16E24A77EAD00430FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E005C14824A77EA800430FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E005C15024A77EA800430FF7 /* AppDelegate.swift in Sources */,
+				E0CBA9A22651C2FC0040E87F /* MapView.swift in Sources */,
+				E005C15224A77EA800430FF7 /* SceneDelegate.swift in Sources */,
+				E005C15724A77EA800430FF7 /* ContentView.swift in Sources */,
+				E005C15524A77EA800430FF7 /* NationalParks.xcdatamodeld in Sources */,
+				E0CBA9A02651C19A0040E87F /* CircleImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16124A77EAD00430FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E005C16A24A77EAD00430FF7 /* NationalParksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E005C16C24A77EAD00430FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E005C17524A77EAD00430FF7 /* NationalParksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E005C16724A77EAD00430FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E005C14B24A77EA800430FF7 /* NationalParks */;
+			targetProxy = E005C16624A77EAD00430FF7 /* PBXContainerItemProxy */;
+		};
+		E005C17224A77EAD00430FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E005C14B24A77EA800430FF7 /* NationalParks */;
+			targetProxy = E005C17124A77EAD00430FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E005C15D24A77EAD00430FF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E005C15E24A77EAD00430FF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E005C17724A77EAD00430FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E005C17824A77EAD00430FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E005C17A24A77EAD00430FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E005C17B24A77EAD00430FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E005C17D24A77EAD00430FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				INFOPLIST_FILE = NationalParksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/NationalParks";
+			};
+			name = Debug;
+		};
+		E005C17E24A77EAD00430FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				INFOPLIST_FILE = NationalParksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/NationalParks";
+			};
+			name = Release;
+		};
+		E005C18024A77EAD00430FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				INFOPLIST_FILE = NationalParksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Debug;
+		};
+		E005C18124A77EAD00430FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X32HGSW4Y;
+				INFOPLIST_FILE = NationalParksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JC.NationalParksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E005C14724A77EA800430FF7 /* Build configuration list for PBXProject "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E005C17724A77EAD00430FF7 /* Debug */,
+				E005C17824A77EAD00430FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E005C17924A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E005C17A24A77EAD00430FF7 /* Debug */,
+				E005C17B24A77EAD00430FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E005C17C24A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E005C17D24A77EAD00430FF7 /* Debug */,
+				E005C17E24A77EAD00430FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E005C17F24A77EAD00430FF7 /* Build configuration list for PBXNativeTarget "NationalParksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E005C18024A77EAD00430FF7 /* Debug */,
+				E005C18124A77EAD00430FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E005C15324A77EA800430FF7 /* NationalParks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E005C15424A77EA800430FF7 /* NationalParks.xcdatamodel */,
+			);
+			currentVersion = E005C15424A77EA800430FF7 /* NationalParks.xcdatamodel */;
+			path = NationalParks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E005C14424A77EA800430FF7 /* Project object */;
+}
